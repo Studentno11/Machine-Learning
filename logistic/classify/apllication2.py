@@ -2,6 +2,7 @@
 # Machine learning
 # Logistic regression
 """ Used The Canny edge and Regularized fixed Overflow """
+# This version fixed big step gradient descent to small stemp with canny edge by opencv-python.
 
 import pickle
 import numpy as np
