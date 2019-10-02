@@ -15,9 +15,6 @@ features = pickle.load(pickle_in)
 pickle_in = open("labels.pickle", "rb")
 labels = pickle.load(pickle_in)
 
-# edges = cv.Canny(features, 100, 200)
-
-# resize
 IMG_SIZE = 64
 X = []
 for feature in features:
