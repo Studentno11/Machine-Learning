@@ -1,7 +1,7 @@
-"""
-Problem.
-1. Overfit
-"""
+# Kittipat Phongsak
+# Machine learning
+# Logistic regression
+""" Problem. 1. Overfit """
 
 import pickle
 import numpy as np
