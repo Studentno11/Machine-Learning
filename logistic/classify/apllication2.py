@@ -15,9 +15,6 @@ features = pickle.load(pickle_in)
 pickle_in = open("labels.pickle", "rb")
 labels = pickle.load(pickle_in)
 
-# edges = cv.Canny(features, 100, 200)
-
-# resize
 IMG_SIZE = 64
 X = []
 for feature in features:
@@ -53,8 +50,6 @@ for i in range(nums_iterations):
     if i % 100 == 0:
         costs.append(cost)  
         print(f"nums {i} cost: {cost}.")
-    # if  np.isnan(cost):
-    #     break
 
 z_train = np.dot(w.T, X_train_flatten) + b
 A_train = 1 / (1 + np.exp(-z_train))
